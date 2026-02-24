@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* --- JOST FONTS --- */
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-400-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-600-Semi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* --- RED HAT DISPLAY FONTS --- */
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplayRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplayMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplaySemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplayBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplayBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@theme {
+  --font-jost: 'Jost', sans-serif;
+  --font-redhat: 'Red Hat Display', sans-serif;
+}
