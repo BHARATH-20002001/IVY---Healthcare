@@ -35,7 +35,7 @@ export default function Header() {
             <Link
               key={link.label}
               to={link.path}
-              className="font-jost text-[16px] font-medium transition-colors text-stone-800 hover:text-[#155d6a] dark:text-stone-100 dark:hover:text-stone-300"
+              className="font-jost text-[13px] font-normal transition-colors text-stone-800 hover:text-[#155d6a] dark:text-stone-100 dark:hover:text-stone-300 md:text-[16px]"
             >
               {link.label}
             </Link>
@@ -46,7 +46,7 @@ export default function Header() {
         <div className="hidden md:flex-shrink-0 md:flex">
           <Link
             to="/contact"
-            className="font-redhat font-semibold px-6 py-2.5 rounded-md transition-colors bg-[#155d6a] text-white hover:bg-[#0f4651] dark:bg-[#0f4651] dark:text-white dark:hover:bg-[#0f4651]"
+            className="font-redhat font-semibold px-6 py-2 rounded-md transition-colors bg-[#155d6a] text-white hover:bg-[#0f4651] dark:bg-[#0f4651] dark:text-white dark:hover:bg-[#0f4651]"
           >
             Contact Us
           </Link>
@@ -70,7 +70,9 @@ export default function Header() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              d={
+                isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+              }
             />
           </svg>
         </button>
