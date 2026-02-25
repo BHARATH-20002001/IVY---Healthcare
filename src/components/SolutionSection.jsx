@@ -45,7 +45,7 @@ export default function SolutionSection() {
           {/* --- RIGHT COLUMN: Content & Features --- */}
           <div>
             {/* Subtitle & Title */}
-            <span className="font-jost text-stone-500 dark:text-stone-400 tracking-[0.2em] uppercase text-sm font-medium">
+            <span className="font-jost text-stone-500 dark:text-stone-400 tracking-[0.2em] uppercase text-sm font-medium tracking-[5px]">
               Easy Business Solution
             </span>
             <h2 className="font-redhat font-black text-2xl md:text-3xl lg:text-5xl text-stone-900 dark:text-white mt-4 mb-8 leading-tight uppercase">
