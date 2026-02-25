@@ -97,7 +97,7 @@ export default function HeroBanner() {
               </p>
               <Link
                 to={slide.ctaLink}
-                className="font-redhat font-semibold text-white bg-[#155d6a] hover:bg-[#0f4651] px-8 py-3 rounded-md transition-colors"
+                className="font-redhat font-semibold text-white bg-[#155d6a] hover:bg-[#0f4651] px-6 py-2 rounded-md transition-colors"
               >
                 {slide.ctaText}
               </Link>
