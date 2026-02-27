@@ -65,26 +65,26 @@ export default function ClientGoalSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* --- LEFT COLUMN: Image Collage --- */}
-          <div className="relative w-full pb-10 pr-10">
+          <div className="relative w-full pb-0 pr-10">
             {/* Decorative Top Left Blue Dash */}
-            <div className="absolute top-0 left-10 w-24 h-4 bg-[#155d6a] mt-4 z-0 hidden md:block" />
+            <div className="hidden  md:block absolute -top-10 left-20 w-24 h-4 bg-[#155d6a] mt-0 z-0 " />
 
             {/* Main Large Image */}
             <img
               src={ClientGoalMain}
               alt="Team collaborating"
-              className="relative z-10 w-[85%] ml-auto rounded-lg shadow-xl object-cover aspect-[4/5] md:aspect-square mb-4"
+              className="relative z-10 w-full md:w-[85%] ml-auto rounded-lg shadow-xl object-cover aspect-4/5 md:aspect-square mb-4"
             />
 
             {/* Small Floating Image (Top Right) */}
             <img
               src={ClientGoalTop}
               alt="Meeting"
-              className="hidden lg:block absolute top-0 right-0 z-0 w-[45%] rounded-lg shadow-xl object-cover aspect-[4/3] -mt-12 -mr-6 transition-colors duration-300"
+              className="hidden lg:block absolute top-0 right-0 z-0 w-[45%] rounded-lg shadow-xl object-cover aspect-4/3 -mt-25 -mr-6 transition-colors duration-300"
             />
 
             {/* Logo Box (Bottom Left) */}
-            <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 z-30 w-[150px] md:w-[220px]">
+            <div className="absolute bottom-0 left-0 md:-bottom-10 md:left-0 z-30 w-[150px] md:w-[220px]">
               <img
                 src={ClientGoalLogo}
                 alt="Ivy Healthcare Group"
@@ -99,9 +99,9 @@ export default function ClientGoalSection() {
             <span className="font-jost text-stone-500 dark:text-stone-400 tracking-[0.2em] uppercase text-sm font-medium">
               Easy Business Solution
             </span>
-            <h2 className="font-redhat font-black text-4xl lg:text-5xl text-stone-900 dark:text-white mt-4 mb-8 leading-tight uppercase">
+            <h2 className="font-redhat font-black text-2xl md:text-3xl lg:text-5xl text-stone-900 dark:text-white mt-4 mb-8 leading-tight uppercase">
               We Are Help Our <br /> Clients{" "}
-              <span className="text-[#155d6a] dark:text-[#56b9cb]">
+              <span className="font-thin text-[#155d6a] dark:text-[#56b9cb]">
                 For Goal
               </span>
             </h2>
@@ -130,7 +130,7 @@ export default function ClientGoalSection() {
 
                   {/* Text Content */}
                   <div>
-                    <h3 className="font-redhat font-bold text-xl text-stone-900 dark:text-white mb-2">
+                    <h3 className="font-redhat font-bold text-[18px] md:text-1xl text-stone-900 dark:text-white mb-2">
                       {feature.title}
                     </h3>
                     <p className="font-jost text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
