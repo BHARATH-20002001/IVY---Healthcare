@@ -3,6 +3,7 @@ import SolutionSection from "../components/SolutionSection";
 import ServicesSection from "../components/ServicesSection";
 import HomeContactBanner from "../components/HomeContactBanner";
 import ClientGoalSection from "../components/ClientGoalSection";
+import CaseStudiesSection from "../components/CaseStudiesSection";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <ServicesSection />
       <HomeContactBanner />
       <ClientGoalSection />
+      <CaseStudiesSection />
 
       {/* Later, you can add more homepage sections here, like "About Us" or "Services" */}
     </main>
