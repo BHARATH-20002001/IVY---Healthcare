@@ -1,4 +1,5 @@
 import HeroBanner from "../components/HeroBanner";
+import ClientLogoSection from "../components/ClientLogoSection";
 import SolutionSection from "../components/SolutionSection";
 import ServicesSection from "../components/ServicesSection";
 import HomeContactBanner from "../components/HomeContactBanner";
@@ -19,6 +20,7 @@ export default function Home() {
       <CaseStudiesSection />
       <WhyChooseUsSection />
       <TeamSection />
+      <ClientLogoSection />
 
       {/* Later, you can add more homepage sections here, like "About Us" or "Services" */}
     </main>

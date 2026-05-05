@@ -72,20 +72,20 @@ export default function TeamSection() {
         </div>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {TEAM_DATA.map((member) => (
             <div
               key={member.id}
-              className="relative w-full aspect-[3/4] md:aspect-[3.3/4.5] rounded-[15px] overflow-hidden group shadow-lg dark:shadow-none"
+              className="relative w-full rounded-[15px] overflow-hidden group shadow-lg dark:shadow-none"
             >
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-[500px] md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-[500px] md:h-[500px] object-cover rounded-[15px] transition-transform duration-700 group-hover:scale-105"
               />
               {/* Overlay Content */}
-              <div className="absolute bottom-0 left-0 w-[85%] bg-[#151515] rounded-tr-[40px] p-6 flex flex-col items-center justify-center transition-all duration-300 group-hover:w-[90%]">
-                <h3 className="text-white font-bold text-xl md:text-2xl font-redhat text-center">
+              <div className="absolute bottom-0 left-0 w-[85%] bg-white dark:bg-[#151515] rounded-tr-[40px] p-6 flex flex-col items-center justify-center transition-all duration-300 group-hover:w-[90%]">
+                <h3 className="text-stone-900 dark:text-white font-bold text-xl md:text-2xl font-redhat text-center">
                   {member.name}
                 </h3>
                 <p className="text-[#155d6a] dark:text-[#56b9cb] text-sm md:text-base mt-2 font-jost text-center">
