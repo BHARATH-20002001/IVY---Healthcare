@@ -15,7 +15,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full transition-colors duration-300 bg-white dark:bg-[#0F0F0F]">
+    <header className="relative z-50 w-full transition-colors duration-300 bg-white dark:bg-[#0F0F0F]">
       <div className="max-w-[1240px] w-full mx-auto px-[20px] md:px-0 py-5 flex items-center justify-between">
         {/* Logo Section */}
         <div className="">
@@ -81,29 +81,32 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="absolute top-20 left-0 w-full bg-white dark:bg-[#0F0F0F] md:hidden">
-          <nav className="flex flex-col items-start gap-4 p-4">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.label}
-                to={link.path}
-                onClick={() => setIsMenuOpen(false)}
-                className="font-jost text-[16px] font-medium transition-colors text-stone-800 hover:text-[#155d6a] dark:text-stone-100 dark:hover:text-stone-300"
-              >
-                {link.label}
-              </Link>
-            ))}
+      <div
+        className={`absolute top-full left-0 w-full bg-white dark:bg-[#0F0F0F] md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen
+          ? "max-h-[400px] border-t border-stone-100 dark:border-stone-800 shadow-xl"
+          : "max-h-0 border-t-0 border-transparent shadow-none"
+          }`}
+      >
+        <nav className="flex flex-col items-start gap-4 p-4">
+          {NAV_LINKS.map((link) => (
             <Link
-              to="/contact"
+              key={link.label}
+              to={link.path}
               onClick={() => setIsMenuOpen(false)}
-              className="font-redhat font-semibold px-6 py-2.5 rounded-md transition-colors bg-[#155d6a] text-white hover:bg-[#0f4651] dark:bg-[#0f4651] dark:text-white dark:hover:bg-[#0f4651]"
+              className="font-jost text-[16px] font-medium transition-colors text-stone-800 hover:text-[#155d6a] dark:text-stone-100 dark:hover:text-stone-300"
             >
-              Contact Us
+              {link.label}
             </Link>
-          </nav>
-        </div>
-      )}
+          ))}
+          <Link
+            to="/contact"
+            onClick={() => setIsMenuOpen(false)}
+            className="font-redhat font-semibold px-6 py-2.5 rounded-md transition-colors bg-[#155d6a] text-white hover:bg-[#0f4651] dark:bg-[#0f4651] dark:text-white dark:hover:bg-[#0f4651]"
+          >
+            Contact Us
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 }

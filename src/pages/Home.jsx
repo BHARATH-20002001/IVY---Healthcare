@@ -5,7 +5,7 @@ import HomeContactBanner from "../components/HomeContactBanner";
 import ClientGoalSection from "../components/ClientGoalSection";
 import CaseStudiesSection from "../components/CaseStudiesSection";
 import WhyChooseUsSection from "../components/WhyChooseUsSection";
-
+import TeamSection from "../components/TeamSection";
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
       <ClientGoalSection />
       <CaseStudiesSection />
       <WhyChooseUsSection />
+      <TeamSection />
 
       {/* Later, you can add more homepage sections here, like "About Us" or "Services" */}
     </main>
