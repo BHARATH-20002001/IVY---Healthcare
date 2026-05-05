@@ -56,7 +56,7 @@ const SERVICES_DATA = [
 export default function ServicesSection() {
   return (
     <section
-      className="relative py-24 bg-white dark:bg-stone-900 transition-colors duration-300 bg-contain bg-center bg-no-repeat"
+      className="relative py-[30px] md:py-24 bg-white dark:bg-stone-900 transition-colors duration-300 bg-cover md:bg-contain bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${ServiceBg})` }}
     >
       {/* Background Map Image (Optional) */}
@@ -69,7 +69,7 @@ export default function ServicesSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         {/* --- HEADER --- */}
         <div className="text-center mb-16">
-          <span className="text-xs md:text-smfont-jost text-[#155d6a] dark:text-[#56b9cb] tracking-[0.2em] uppercase font-semibold tracking-[5px]">
+          <span className="text-xs md:text-sm font-jost text-[#155d6a] dark:text-[#56b9cb] tracking-[0.2em] uppercase font-semibold tracking-[5px]">
             Key To Success
           </span>
           <h2 className="font-redhat font-black text-2xl md:text-3xl lg:text-5xl text-stone-900 dark:text-white mt-4 uppercase">

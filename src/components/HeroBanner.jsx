@@ -73,9 +73,8 @@ export default function HeroBanner() {
   return (
     <div className="relative w-full h-[600px] md:h-[80vh] overflow-hidden group">
       <div
-        className={`flex w-full h-full ${
-          isTransitioning ? "transition-transform duration-700 ease-in-out" : ""
-        }`}
+        className={`flex w-full h-full ${isTransitioning ? "transition-transform duration-700 ease-in-out" : ""
+          }`}
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         onTransitionEnd={handleTransitionEnd}
       >
@@ -85,7 +84,7 @@ export default function HeroBanner() {
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             />
-            <div className="relative z-20 h-full px-5 md:px-10 lg:px-20 flex flex-col justify-center items-start text-white">
+            <div className="relative z-20 h-full w-full max-w-[1240px] mx-auto px-[20px] md:px-0 flex flex-col justify-center items-start text-white">
               <span className="font-jost text-sm md:text-base font-medium tracking-widest uppercase mb-2">
                 {slide.subtitle}
               </span>

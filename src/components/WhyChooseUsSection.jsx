@@ -57,11 +57,10 @@ export default function WhyChooseUsSection() {
                 return (
                   <div
                     key={item.id}
-                    className={`rounded-md overflow-hidden transition-all duration-300 border ${
-                      isOpen
+                    className={`rounded-md overflow-hidden transition-all duration-300 border ${isOpen
                         ? "bg-white border-white"
                         : "bg-transparent border-stone-700 hover:border-stone-500"
-                    }`}
+                      }`}
                   >
                     {/* Accordion Header (Clickable) */}
                     <button
@@ -82,11 +81,10 @@ export default function WhyChooseUsSection() {
 
                       {/* Chevron Icon */}
                       <svg
-                        className={`w-5 h-5 flex-shrink-0 transition-transform duration-300 ${
-                          isOpen
+                        className={`w-5 h-5 flex-shrink-0 transition-transform duration-300 ${isOpen
                             ? "text-[#155d6a] rotate-180"
                             : "text-[#155d6a]"
-                        }`}
+                          }`}
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -102,13 +100,12 @@ export default function WhyChooseUsSection() {
 
                     {/* Accordion Body */}
                     <div
-                      className={`px-6 transition-all duration-500 ease-in-out ${
-                        isOpen
+                      className={`px-6 transition-all duration-500 ease-in-out ${isOpen
                           ? "max-h-40 pb-6 opacity-100"
                           : "max-h-0 pb-0 opacity-0"
-                      }`}
+                        }`}
                     >
-                      <p className="font-jost text-stone-600 text-sm leading-relaxed pl-8">
+                      <p className="font-jost text-stone-600 text-sm leading-relaxed pl-0 md:pl-8">
                         {item.answer}
                       </p>
                     </div>

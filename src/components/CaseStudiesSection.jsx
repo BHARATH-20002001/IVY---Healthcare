@@ -80,7 +80,7 @@ export default function CaseStudiesSection() {
   }, []);
 
   return (
-    <section className="relative py-24 bg-stone-50 dark:bg-stone-900 transition-colors duration-300 overflow-hidden">
+    <section className="relative py-[30px] md:py-24 bg-stone-50 dark:bg-stone-900 transition-colors duration-300 overflow-hidden">
       {/* Optional Faint Wavy Background */}
       <div
         className="absolute inset-0 z-0 opacity-10 dark:hidden pointer-events-none bg-cover bg-center"
