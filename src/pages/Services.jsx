@@ -2,6 +2,7 @@ import React from "react";
 import ServiceBanner from "../components/ServiceBanner";
 import ServiceList from "../components/ServiceList";
 import BusinessGrowthSection from "../components/BusinessGrowthSection";
+import CustomerBenefitsSection from "../components/CustomerBenefitsSection";
 
 export default function Services() {
   return (
@@ -9,6 +10,7 @@ export default function Services() {
       <ServiceBanner />
       <ServiceList />
       <BusinessGrowthSection />
+      <CustomerBenefitsSection />
     </main>
   );
 }
