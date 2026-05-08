@@ -67,9 +67,11 @@ export default function Footer() {
               alt="IVY Healthcare Group"
               className="w-40 md:w-full h-auto mb-8 brightness-0 invert object-contain"
             />
-            <p className="font-jost text-sm text-stone-300 max-w-xs leading-relaxed">
-              Where the care is crafted for you, and the kindness comes from the heart.
-            </p>
+            <Link to="/" className="hover:text-white transition-colors">
+              <p className="font-jost text-sm text-stone-300 max-w-xs leading-relaxed mt-2">
+                Where the care is crafted for you, and the kindness comes from the heart.
+              </p>
+            </Link>
           </div>
 
           {/* Column 2: Quick Links */}
@@ -110,11 +112,11 @@ export default function Footer() {
             <div className="flex flex-col gap-5 font-jost text-[15px] text-stone-300 mb-8">
               <div>
                 <p className="font-bold text-white mb-1">Phone</p>
-                <p>+1 (305) 912-9260</p>
+                <a href="tel:+13059129260" className="hover:text-white transition-colors">+1 (305) 912-9260</a>
               </div>
               <div>
                 <p className="font-bold text-white mb-1">Email</p>
-                <p>info@ivyhealthcaregroup.com</p>
+                <a href="mailto:info@ivyhealthcaregroup.com" className="hover:text-white transition-colors">info@ivyhealthcaregroup.com</a>
               </div>
             </div>
 
